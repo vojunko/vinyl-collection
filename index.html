@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Moje vinylová kolekce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📀 VINYL COLLECTION</h1>
+    <nav class="tabs">
+      <button class="tab active" data-target="searchTab">Search</button>
+      <button class="tab" data-target="collectionTab">Collection</button>
+      <button class="tab" data-target="wishlistTab">Wishlist</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Vyhledávání -->
+    <section id="searchTab" class="tab-content active">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Enter the name of the artist or album...">
+        <button id="searchBtn">🔍 Search</button>
+      </div>
+      <div id="results" class="grid"></div>
+    </section>
+
+    <!-- Kolekce -->
+    <section id="collectionTab" class="tab-content">
+      <h2>Collection</h2>
+      <p id="emptyMsgCol">Your collection is empty.</p>
+      <div id="collection" class="grid"></div>
+    </section>
+
+    <!-- Wishlist -->
+    <section id="wishlistTab" class="tab-content">
+      <h2>Wishlist</h2>
+      <p id="emptyMsgWish">Your wishlist is empty.</p>
+      <div id="wishlist" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer">Using Discogs API | VINYL COLLECTION | © 2025 Vojtech Kania</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
